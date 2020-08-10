@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Distance Between Cities</title>
+    <!-- Bootstrap CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="styling.css" rel="stylesheet" >
+      <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+
+    
+  </head>
+  <body>
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <h1>Distance Between Cities</h1>
+            <p>Our Website will help you calculate travelling distance.</p>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="from" class="col-xs-2 control-label">From:</label>
+                    <div class="col-xs-10">
+                        <input type="text" id="from" placeholder="Origin" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="to" class="col-xs-2 control-label">To:</label>
+                    <div class="col-xs-10">
+                        <input type="text" id="to" placeholder="Destination" class="form-control">
+                    </div>
+                </div>
+            </form>
+            <div class="col-xs-offset-2 col-xs-10">
+                <button class="btn btn-info btn-lg " onclick="calcRoute();">Submit</button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div id="googleMap">
+            
+            </div>
+            <div id="output">
+            
+            </div>
+        </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+      
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      
+      <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+      <script src="javascript.js"></script>
+    </body>
+</html>
